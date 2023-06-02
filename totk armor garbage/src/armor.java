@@ -416,13 +416,18 @@ public class armor {
     private void depths_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(bdf, 3);
             case 2:
-
+                mats.put(gdc, 5);
+                mats.put(bff, 3);
             case 3:
-
+                mats.put(gz, 20);
+                mats.put(bffn, 3);
+                mats.put(boff, 3);
             case 4:
-
+                mats.put(bbwff, 5);
+                mats.put(glz, 10);
+                mats.put(bfg, 3);
                 break;
         }
     }
@@ -430,13 +435,21 @@ public class armor {
     private void champion_tunic(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(psp, 3);
+                mats.put(lds, 2);
             case 2:
+                mats.put(psp, mats.getOrDefault(psp, 0) + 3);
+                mats.put(ldt, 2);
+                mats.put(ps, 10);
 
             case 3:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 5);
+                mats.put(ldf, 2);
+                mats.put(ps, mats.getOrDefault(ps, 0) + 15);
             case 4:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 10);
+                mats.put(ldh, 2);
+                mats.put(ps, mats.getOrDefault(ps, 0) + 20);
                 break;
         }
     }
@@ -444,12 +457,17 @@ public class armor {
     private void awakening_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gl, 10);
+                mats.put(sf, 1);
             case 2:
-
+                mats.put(gl, mats.getOrDefault(gl, 0) + 15);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 3:
-
+                mats.put(gl, mats.getOrDefault(gl, 0) + 20);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 4:
+                mats.put(gl, mats.getOrDefault(gl, 0) + 30);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
 
                 break;
         }
@@ -458,13 +476,19 @@ public class armor {
     private void zonaite_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(sch, 5);
             case 2:
-
+                mats.put(sch2, 5);
+                mats.put(gz, 5);
+                mats.put(cch, 5);
             case 3:
-
+                mats.put(glz, 5);
+                mats.put(cch2, 5);
+                mats.put(sch3, 5);
             case 4:
-
+                mats.put(glz, mats.getOrDefault(glz, 0) + 10);
+                mats.put(cch3, 5);
+                mats.put(sch4, 5);
                 break;
         }
     }
@@ -472,13 +496,18 @@ public class armor {
     private void frostbite_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(pif, 3);
             case 2:
-
+                mats.put(ilh, 5);
+                mats.put(bwb, 5);
             case 3:
-
+                mats.put(ils, 5);
+                mats.put(bcd, 5);
+                mats.put(lzc, 5);
             case 4:
-
+                mats.put(bgih, 5);
+                mats.put(fct, 10);
+                mats.put(lzc, mats.getOrDefault(lzc, 0) + 10);
                 break;
         }
     }
@@ -486,13 +515,18 @@ public class armor {
     private void charged_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(psf, 3);
             case 2:
-
+                mats.put(btb, 3);
+                mats.put(elh, 5);
             case 3:
-
+                mats.put(sls, 5);
+                mats.put(bed, 5);
+                mats.put(lzc, 3);
             case 4:
-
+                mats.put(bgth, 5);
+                mats.put(fvt, 10);
+                mats.put(lzc, mats.getOrDefault(lzc, 0) + 5);
                 break;
         }
     }
@@ -500,13 +534,18 @@ public class armor {
     private void ember_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(pff, 3);
             case 2:
-
+                mats.put(flh, 5);
+                mats.put(bsub, 5);
             case 3:
-
+                mats.put(fls, 5);
+                mats.put(bwd, 5);
+                mats.put(lzc, 5);
             case 4:
-
+                mats.put(bgfh, 5);
+                mats.put(fszt, 10);
+                mats.put(lzc, mats.getOrDefault(lzc, 0) + 10);
                 break;
         }
     }
@@ -908,7 +947,7 @@ public class armor {
         return;
     }
 
-    //needs double checking
+    //not accurate, fix
     private void wild_set(int tier) {
         switch (tier) {
             case 1:
@@ -960,6 +999,7 @@ public class armor {
     String pa = "Acorn";
     String pv = "Voltfruit";
     String psc = "Swift Carrot";
+
     String psv = "Swift Violet";
     String pmt = "Mighty Thistle";
     String pws = "Warm Safflina";
@@ -968,6 +1008,10 @@ public class armor {
     String pbn = "Blue Nightshade";
     String psp = "Silent Princess";
     String ps = "Sundelion";
+
+    String pff = "Fire Fruit";
+    String pif = "Ice Fruit";
+    String psf = "Shock Fruit";
 
     ///Mushrooms
     String mr = "Rushroom";
@@ -982,13 +1026,25 @@ public class armor {
     String fhb = "Hyrule Bass";
     String fheb = "Hearty Bass";
     String fst = "Stealthfin Trout";
+    String fszt = "Sizzlefin Trout";
+    String fct = "Chillfin Trout";
+    String fvt = "Voltfin Trout";
     String fgf = "Glowing Cave Fish";
 
     ///Bugs
     String bsb = "Smotherwing Butterfly";
+    String bsub = "Summerwing Butterfly";
+    String bwb = "Winterwing Butterfly";
+    String btb = "Thunderwing Butterfly";
+
     String bsf = "Sunset Firefly";
     String bdf = "Deep Firefly";
     String bcbh = "Courser Bee Honey";
+
+    String bwd = "Warm Darner";
+    String bcd = "Cold Darner";
+    String bed = "Electric Darner";
+
     String beb = "Energetic Rhino Beetle";
     String bbb = "Bladed Rhino Beetle";
 
@@ -1056,10 +1112,25 @@ public class armor {
     String cwj = "White Chuchu Jelly";
     String cyj = "Yellow Chuchu Jelly";
 
+    //Like Like Parts
+    String fls = "Fire Like Stone";
+    String ils = "Ice Like Stone";
+    String sls = "Shock Like Stone";
+
     //Gibdo Parts
     String gb = "Gibdo Bone";
     String gg = "Gibdo Guts";
     String gw = "Gibdo Wing";
+
+    //Construct Parts
+    String sch = "Soldier Construct I Horn";
+    String sch2 = "Soldier Construct II Horn";
+    String sch3 = "Soldier Construct III Horn";
+    String sch4 = "Soldier Construct IV Horn";
+
+    String cch = "Captain Construct I Horn";
+    String cch2 = "Captain Construct II Horn";
+    String cch3 = "Captain Construct III Horn";
 
     ///Boss Monster Parts
     //Hinox Parts
@@ -1069,6 +1140,10 @@ public class armor {
 
     //Frox Parts
     String bfg = "Frox Guts";
+    String bffn = "Frox Fingernail";
+    String bff = "Frox Fang";
+    String boff = "Obsidian Frox Fang";
+    String bbwff = "Blue-White Frox Fang";
 
     //Molduga Parts
     String bmj = "Molduga Jaw";
@@ -1090,6 +1165,9 @@ public class armor {
     //Gleeok Parts
     String bgw = "Gleeok Wing";
     String bgg = "Gleeok Guts";
+    String bgfh = "Gleeok Flame Horn";
+    String bgih = "Gleeok Ice Horn";
+    String bgth = "Gleeok Thunder Horn";
 
     ///Gems
     String gf = "Flint";
@@ -1123,8 +1201,17 @@ public class armor {
     String fh = "Farosh's Horn";
     String ff = "Shard of Farosh's Fang";
 
+    String lds = "Light Dragon's Scale";
+    String ldt = "Light Dragon's Talon";
+    String ldsp;
+    String ldh = "Light Dragon's Horn";
+    String ldf = "Shard of Light Dragon's Fang";
+
     ///Misc
     String sf = "Star Fragment";
     String bs = "Brightbloom Seed";
     String gbs = "Giant Brightbloom Seed";
+
+    String lzc = "Large Zonai Charge";
+    String gdc = "Dark Clump";
 }
