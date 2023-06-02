@@ -514,13 +514,18 @@ public class armor {
     private void miner_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(bs, 10);
             case 2:
-
+                mats.put(bs, mats.getOrDefault(bs, 0) + 20);
+                mats.put(mbc, 5);
             case 3:
-
+                mats.put(gbs, 15);
+                mats.put(bdf, 10);
+                mats.put(fgf, 5);
             case 4:
-
+                mats.put(gbs, mats.getOrDefault(gbs, 0) + 20);
+                mats.put(glz, 10);
+                mats.put(gd, 3);
                 break;
         }
     }
@@ -528,13 +533,17 @@ public class armor {
     private void froggy_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(csl, 3);
             case 2:
-
-            case 3:
-
+                mats.put(csl, mats.getOrDefault(csl, 0) + 5);
+                mats.put(hh, 5);
+            case 3: 
+                mats.put(bhh, 5);
+                mats.put(csf, 5);
             case 4:
-
+                mats.put(blhh, 5);
+                mats.put(hg, 10);
+                mats.put(go, 10);
                 break;
         }
     }
@@ -542,13 +551,21 @@ public class armor {
     private void ancient_aspect(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(sbh, 9);
+                mats.put(bhg, 9);
+                mats.put(gz, 15);
             case 2:
-
+                mats.put(smh, 9);
+                mats.put(bfg, 9);
+                mats.put(glz, 10);
             case 3:
-
+                mats.put(slh, 9);
+                mats.put(bmg, 9);
+                mats.put(glz, mats.getOrDefault(glz, 0) + 15);
             case 4:
-
+                mats.put(bslsh, 9);
+                mats.put(bslmh, 9);
+                mats.put(bgg, 9);
                 break;
         }
     }
@@ -556,13 +573,17 @@ public class armor {
     private void glide_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(kw, 3);
             case 2:
-
+                mats.put(aw, 5);
+                mats.put(ae, 6);
             case 3:
-
+                mats.put(aw, mats.getOrDefault(aw, 0) + 6);
+                mats.put(ae, mats.getOrDefault(ae, 0) + 8);
             case 4:
-
+                mats.put(aw, mats.getOrDefault(aw, 0) + 10);
+                mats.put(gw, 8);
+                mats.put(bgw, 12);
                 break;
         }
     }
@@ -570,13 +591,18 @@ public class armor {
     private void sand_boots(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(chl, 3);
             case 2:
-
+                mats.put(gb, 20);
+                mats.put(psc, 5);
             case 3:
-
+                mats.put(gg, 5);
+                mats.put(mr, 10);
+                mats.put(bmf, 5);
             case 4:
-
+                mats.put(bmg, 5);
+                mats.put(psv, 10);
+                mats.put(chel, 5);
                 break;
         }
     }
@@ -584,13 +610,19 @@ public class armor {
     private void barbarian_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(pmt, 3);
             case 2:
-
+                mats.put(mrz, 5);
+                mats.put(blsh, 2);
+                mats.put(blmh, 2);
             case 3:
-
+                mats.put(bblsh, 3);
+                mats.put(bblmh, 3);
+                mats.put(crc, 3);
             case 4:
-
+                mats.put(bwlsh, 3);
+                mats.put(bwlmh, 3);
+                mats.put(bbb, 3);
                 break;
         }
     }
@@ -927,7 +959,9 @@ public class armor {
     ///Plant foods
     String pa = "Acorn";
     String pv = "Voltfruit";
+    String psc = "Swift Carrot";
     String psv = "Swift Violet";
+    String pmt = "Mighty Thistle";
     String pws = "Warm Safflina";
     String pcs = "Cool Safflina";
     String pes = "Electric Safflina";
@@ -937,27 +971,36 @@ public class armor {
 
     ///Mushrooms
     String mr = "Rushroom";
+    String mrz = "Razorshroom";
     String ms = "Sunshroom";
     String mc = "Chillshroom";
     String mz = "Zapshroom";
     String mss = "Silent Shroom";
+    String mbc = "Brightcap";
 
     ///Fish
     String fhb = "Hyrule Bass";
     String fheb = "Hearty Bass";
     String fst = "Stealthfin Trout";
+    String fgf = "Glowing Cave Fish";
 
     ///Bugs
     String bsb = "Smotherwing Butterfly";
     String bsf = "Sunset Firefly";
+    String bdf = "Deep Firefly";
     String bcbh = "Courser Bee Honey";
     String beb = "Energetic Rhino Beetle";
+    String bbb = "Bladed Rhino Beetle";
 
     ///Misc Critters
     String chf = "Hot-footed Frog";
+    String csf = "Stick Frog";
     String chl = "Hightail Lizard";
+    String chel = "Hearty Lizard";
     String cfl = "Fireproof Lizard";
+    String csl = "Sticky Lizard";
     String css = "Sneaky River Snail";
+    String crc = "Razorclaw Crab";
 
     ///Monster Parts
     //Bokoblin Parts
@@ -973,6 +1016,7 @@ public class armor {
     String lh = "Lizalfos Horn";
     String blh = "Blue Lizalfos Horn";
     String blah = "Black Lizalfos Horn";
+    String slh = "Silver Lizalfos Horn";
     String flh = "Fire-Breath Lizalfos Tail";
     String ilh = "Ice-Breath Lizalfos Horn";
     String elh = "Electric Lizalfos Horn";
@@ -987,9 +1031,13 @@ public class armor {
     String mg = "Moblin Guts";
     String mh = "Moblin Horn";
     String bmh = "Blue Moblin Horn";
+    String smh = "Silver Moblin Horn";
 
     //Horriblin Parts
     String hg = "Horriblin Guts";
+    String hh = "Horriblin Horn";
+    String bhh = "Blue Horriblin Horn";
+    String blhh = "Black Horriblin Horn";
 
     //Keese Parts
     String ke = "Keese Eyeball";
@@ -997,6 +1045,10 @@ public class armor {
     String fkw = "Fire Keese Wing";
     String ikw = "Ice Keese Wing";
     String ekw = "Electric Keese Wing";
+
+    //Aerocuda Parts
+    String aw = "Aerocuda Wing";
+    String ae = "Aerocuda Eyeball";
 
     //Chuchu Parts
     String cj = "Chuchu Jelly";
@@ -1006,6 +1058,8 @@ public class armor {
 
     //Gibdo Parts
     String gb = "Gibdo Bone";
+    String gg = "Gibdo Guts";
+    String gw = "Gibdo Wing";
 
     ///Boss Monster Parts
     //Hinox Parts
@@ -1013,12 +1067,29 @@ public class armor {
     String bht = "Hinox Toenail";
     String bhto = "Hinox Tooth";
 
+    //Frox Parts
+    String bfg = "Frox Guts";
+
     //Molduga Parts
     String bmj = "Molduga Jaw";
+    String bmf = "Molduga Fin";
+    String bmg = "Molduga Guts";
 
     //Lynel Parts
     String blho = "Lynel Hoof";
     String blg = "Lynel Guts";
+    String blsh = "Lynel Saber Horn";
+    String blmh = "Lynel Mace Horn";
+    String bblsh = "Blue-Maned Lynel Saber Horn";
+    String bblmh = "Blue-Maned Lynel Mace Horn";
+    String bwlsh = "White-Maned Lynel Saber Horn";
+    String bwlmh = "White-Maned Lynel Mace Horn";
+    String bslsh = "Silver Lynel Saber Horn";
+    String bslmh = "Silver Lynel Mace Horn";
+
+    //Gleeok Parts
+    String bgw = "Gleeok Wing";
+    String bgg = "Gleeok Guts";
 
     ///Gems
     String gf = "Flint";
@@ -1029,6 +1100,9 @@ public class armor {
     String gs = "Sapphire";
     String gt = "Topaz";
     String gd = "Diamond";
+
+    String gz = "Zonaite";
+    String glz = "Large Zonaite";
 
     ///Dragon Parts
     String ds = "Dinraal's Scale";
@@ -1051,4 +1125,6 @@ public class armor {
 
     ///Misc
     String sf = "Star Fragment";
+    String bs = "Brightbloom Seed";
+    String gbs = "Giant Brightbloom Seed";
 }
