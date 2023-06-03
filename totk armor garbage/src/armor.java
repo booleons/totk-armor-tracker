@@ -25,8 +25,14 @@ public class armor {
             case "hyl":
                 hylian_set(tier);
                 break;
-            case "wil":
-                wild_set(tier);
+            case "wih":
+                wild_head(tier);
+                break;
+            case "wit":
+                wild_torso(tier);
+                break;
+            case "wib":
+                wild_boots(tier);
                 break;
             case "zor":
                 zora_set(tier);
@@ -172,13 +178,17 @@ public class armor {
     private void hero_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gr, 1);
+                mats.put(sf, 1);
             case 2:
-
+                mats.put(gr, mats.getOrDefault(gr, 0) + 4);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 3:
-
+                mats.put(gr, mats.getOrDefault(gr, 0) + 6);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 4:
-
+                mats.put(gr, mats.getOrDefault(gr, 0) + 10);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
                 break;
         }
     }
@@ -232,13 +242,17 @@ public class armor {
     private void sheik_mask(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(psp, 1);
+                mats.put(sf, 1);
             case 2:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 2);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 2);
             case 3:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 4);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 3);
             case 4:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 8);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 4);
                 break;
         }
     }
@@ -246,7 +260,21 @@ public class armor {
     private void sky_set(int tier) {
         switch(tier) {
             case 1:
-
+            switch(tier) {
+                case 1:
+                    mats.put(gs, 1);
+                    mats.put(sf, 1);
+                case 2:
+                    mats.put(gs, mats.getOrDefault(gs, 0) + 4);
+                    mats.put(sf, mats.getOrDefault(sf, 0) + 1);
+                case 3:
+                    mats.put(gs, mats.getOrDefault(gs, 0) + 6);
+                    mats.put(sf, mats.getOrDefault(sf, 0) + 1);
+                case 4:
+                    mats.put(gs, mats.getOrDefault(gs, 0) + 10);
+                    mats.put(sf, mats.getOrDefault(sf, 0) + 1);
+                    break;
+            }
             case 2:
 
             case 3:
@@ -260,13 +288,17 @@ public class armor {
     private void twilight_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gt, 1);
+                mats.put(sf, 1);
             case 2:
-
+                mats.put(gt, mats.getOrDefault(gt, 0) + 4);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 3:
-
+                mats.put(gt, mats.getOrDefault(gt, 0) + 6);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 4:
-
+                mats.put(gt, mats.getOrDefault(gt, 0) + 10);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
                 break;
         }
     }
@@ -274,13 +306,17 @@ public class armor {
     private void wind_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(go, 5);
+                mats.put(sf, 1);
             case 2:
-
+                mats.put(go, mats.getOrDefault(go, 0) + 10);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 3:
-
+                mats.put(go, mats.getOrDefault(go, 0) + 15);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 4:
-
+                mats.put(go, mats.getOrDefault(go, 0) + 25);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
                 break;
         }
     }
@@ -288,29 +324,37 @@ public class armor {
     private void time_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(ga, 10);
+                mats.put(sf, 1);
             case 2:
-
+                mats.put(ga, mats.getOrDefault(ga, 0) + 20);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 3:
-
+                mats.put(ga, mats.getOrDefault(ga, 0) + 30);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
             case 4:
-
+                mats.put(ga, mats.getOrDefault(ga, 0) + 40);
+                mats.put(sf, mats.getOrDefault(sf, 0) + 1);
                 break;
         }
     }
 
-    //everything above here needs double checking
-
     private void naboris_mask(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gz, 5);
+                mats.put(gt, 1);
             case 2:
-
+                mats.put(gz, mats.getOrDefault(gz, 0) + 10);
+                mats.put(gt, mats.getOrDefault(gt, 0) + 4);
             case 3:
-
+                mats.put(gt, mats.getOrDefault(gt, 0) + 6);
+                mats.put(glz, 5);
+                mats.put(pdf, 5);
             case 4:
-
+                mats.put(gt, mats.getOrDefault(gt, 0) + 10);
+                mats.put(glz, mats.getOrDefault(glz, 0) + 10);
+                mats.put(pdf, mats.getOrDefault(pdf, 0) + 10);
                 break;
         }
     }
@@ -318,13 +362,19 @@ public class armor {
     private void rudania_mask(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gz, 5);
+                mats.put(gr, 1);
             case 2:
-
+                mats.put(gz, mats.getOrDefault(gz, 0) + 10);
+                mats.put(gr, mats.getOrDefault(gr, 0) + 4);
             case 3:
-
+                mats.put(gr, mats.getOrDefault(gr, 0) + 6);
+                mats.put(glz, 5);
+                mats.put(pdf, 5);
             case 4:
-
+                mats.put(gr, mats.getOrDefault(gr, 0) + 10);
+                mats.put(glz, mats.getOrDefault(glz, 0) + 10);
+                mats.put(pdf, mats.getOrDefault(pdf, 0) + 10);
                 break;
         }
     }
@@ -332,13 +382,19 @@ public class armor {
     private void medoh_mask(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gz, 5);
+                mats.put(gs, 1);
             case 2:
-
+                mats.put(gz, mats.getOrDefault(gz, 0) + 10);
+                mats.put(gs, mats.getOrDefault(gs, 0) + 4);
             case 3:
-
+                mats.put(gs, mats.getOrDefault(gs, 0) + 6);
+                mats.put(glz, 5);
+                mats.put(pdf, 5);
             case 4:
-
+                mats.put(gs, mats.getOrDefault(gs, 0) + 10);
+                mats.put(glz, mats.getOrDefault(glz, 0) + 10);
+                mats.put(pdf, mats.getOrDefault(pdf, 0) + 10);
                 break;
         }
     }
@@ -346,13 +402,19 @@ public class armor {
     private void ruta_mask(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(gz, 5);
+                mats.put(go, 5);
             case 2:
-
+                mats.put(gz, mats.getOrDefault(gz, 0) + 10);
+                mats.put(go, mats.getOrDefault(go, 0) + 10);
             case 3:
-
+                mats.put(go, mats.getOrDefault(go, 0) + 15);
+                mats.put(glz, 5);
+                mats.put(pdf, 5);
             case 4:
-
+                mats.put(go, mats.getOrDefault(go, 0) + 25);
+                mats.put(glz, mats.getOrDefault(glz, 0) + 10);
+                mats.put(pdf, mats.getOrDefault(pdf, 0) + 10);
                 break;
         }
     }
@@ -360,13 +422,18 @@ public class armor {
     private void royal_guard_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(bg, 3);
+                mats.put(bobh, 3);
             case 2:
-
+                mats.put(bbbh, 3);
+                mats.put(bbf, 3);
             case 3:
-
+                mats.put(blbbh, 3);
+                mats.put(bhg, 3);
             case 4:
-
+                mats.put(sbbh, 3);
+                mats.put(bmg, 3);
+                mats.put(bgg, 3);
                 break;
         }
     }
@@ -374,13 +441,16 @@ public class armor {
     private void snow_boots(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(chl, 3);
             case 2:
-
+                mats.put(ot, 5);
+                mats.put(psc, 5);
             case 3:
-
+                mats.put(ob, 5);
+                mats.put(mr, 20);
             case 4:
-
+                mats.put(ns, 2);
+                mats.put(psv, 20);
                 break;
         }
     }
@@ -388,13 +458,17 @@ public class armor {
     private void yiga_set(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(oe, 2);
             case 2:
-
+                mats.put(mp, 3);
+                mats.put(flt, 3);
             case 3:
-
+                mats.put(ilt, 5);
+                mats.put(ke, 5);
             case 4:
-
+                mats.put(elt, 5);
+                mats.put(bbhh, 3);
+                mats.put(pmb, 10);
                 break;
         }
     }
@@ -402,13 +476,20 @@ public class armor {
     private void memories_tunic(int tier) {
         switch(tier) {
             case 1:
-
+                mats.put(psp, 3);
+                mats.put(lds, 1);
             case 2:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 3);
+                mats.put(ldt, 1);
+                mats.put(fh, 2);
             case 3:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 5);
+                mats.put(ldf, 1);
+                mats.put(nh, 2);
             case 4:
-
+                mats.put(psp, mats.getOrDefault(psp, 0) + 10);
+                mats.put(ldh, 1);
+                mats.put(dh, 2);
                 break;
         }
     }
@@ -947,8 +1028,7 @@ public class armor {
         return;
     }
 
-    //not accurate, fix
-    private void wild_set(int tier) {
+    private void wild_head(int tier) {
         switch (tier) {
             case 1:
                 mats.put(pa, 10);
@@ -964,6 +1044,50 @@ public class armor {
                 mats.put(sf, 3);
                 mats.put(fh, 2);
                 mats.put(fsp, mats.getOrDefault(fsp, 0) + 10);
+                break;
+        }
+
+        return;
+    }
+
+    private void wild_torso(int tier){
+        switch (tier) {
+            case 1:
+                mats.put(pa, 10);
+                mats.put(ns, 2);
+            case 2:
+                mats.put(bcbh, 5);
+                mats.put(nc, 2);
+            case 3:
+                mats.put(beb, 3);
+                mats.put (nf, 2);
+                mats.put(nsp, 5);
+            case 4:
+                mats.put(sf, 3);
+                mats.put(nh, 2);
+                mats.put(nsp, mats.getOrDefault(fsp, 0) + 10);
+                break;
+        }
+
+        return;
+    }
+
+    private void wild_boots(int tier){
+        switch (tier) {
+            case 1:
+                mats.put(pa, 10);
+                mats.put(ds, 2);
+            case 2:
+                mats.put(bcbh, 5);
+                mats.put(dc, 2);
+            case 3:
+                mats.put(beb, 3);
+                mats.put (df, 2);
+                mats.put(dsp, 5);
+            case 4:
+                mats.put(sf, 3);
+                mats.put(dh, 2);
+                mats.put(dsp, mats.getOrDefault(fsp, 0) + 10);
                 break;
         }
 
@@ -998,6 +1122,7 @@ public class armor {
     ///Plant foods
     String pa = "Acorn";
     String pv = "Voltfruit";
+    String pmb = "Mighty Banana";
     String psc = "Swift Carrot";
 
     String psv = "Swift Violet";
@@ -1012,7 +1137,7 @@ public class armor {
     String pff = "Fire Fruit";
     String pif = "Ice Fruit";
     String psf = "Shock Fruit";
-
+    String pdf = "Dazzlefruit";
     ///Mushrooms
     String mr = "Rushroom";
     String mrz = "Razorshroom";
@@ -1021,6 +1146,7 @@ public class armor {
     String mz = "Zapshroom";
     String mss = "Silent Shroom";
     String mbc = "Brightcap";
+    String mp = "Puffshroom";
 
     ///Fish
     String fhb = "Hyrule Bass";
@@ -1106,6 +1232,11 @@ public class armor {
     String aw = "Aerocuda Wing";
     String ae = "Aerocuda Eyeball";
 
+    //Octorok Parts
+    String oe = "Octorok Eyeball";
+    String ot = "Octorok Tentacle";
+    String ob = "Octorok Balloon";
+
     //Chuchu Parts
     String cj = "Chuchu Jelly";
     String crj = "Red Chuchu Jelly";
@@ -1132,11 +1263,20 @@ public class armor {
     String cch2 = "Captain Construct II Horn";
     String cch3 = "Captain Construct III Horn";
 
+    //Boss Bokoblin Parts
+    String bbf = "Boss Bokoblin Fang";
+    String bobh = "Boss Bokoblin Horn";
+    String bbbh = "Blue Boss Bokoblin Horn";
+    String blbbh = "Black Boss Bokoblin Horn";
+    String sbbh = "Silver Boss Bokoblin Horn";
+
+
     ///Boss Monster Parts
     //Hinox Parts
     String bhg = "Hinox Guts";
     String bht = "Hinox Toenail";
     String bhto = "Hinox Tooth";
+    String bbhh = "Black Hinox Horn";
 
     //Frox Parts
     String bfg = "Frox Guts";
