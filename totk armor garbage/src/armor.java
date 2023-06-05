@@ -239,8 +239,10 @@ public class armor {
                 mats.put(fc, 1);
             case 3:
                 mats.put(bhg, 2);
+                mats.put(ff, 1);
             case 4:
                 mats.put(blg, 2);
+                mats.put(fh, 1);
                 break;
         }
     }
