@@ -1073,7 +1073,7 @@ public class armor {
             case 4:
                 mats.put(sf, 3);
                 mats.put(nh, 2);
-                mats.put(nsp, mats.getOrDefault(fsp, 0) + 10);
+                mats.put(nsp, mats.getOrDefault(nsp, 0) + 10);
                 break;
         }
 
@@ -1095,7 +1095,7 @@ public class armor {
             case 4:
                 mats.put(sf, 3);
                 mats.put(dh, 2);
-                mats.put(dsp, mats.getOrDefault(fsp, 0) + 10);
+                mats.put(dsp, mats.getOrDefault(dsp, 0) + 10);
                 break;
         }
 
