@@ -215,12 +215,16 @@ public class armor {
         switch(tier) {
             case 1:
                 mats.put(bht, 5);
+                mats.put(ns, 1);
             case 2:
                 mats.put(bhto, 5);
+                mats.put(nc, 1);
             case 3:
                 mats.put(bhg, 2);
+                mats.put(nf, 1);
             case 4:
                 mats.put(blg, 2);
+                mats.put(nh, 1);
                 break;
         }
     }
@@ -229,8 +233,10 @@ public class armor {
         switch(tier) {
             case 1:
                 mats.put(bht, 5);
+                mats.put(fs, 1);
             case 2:
                 mats.put(bhto, 5);
+                mats.put(fc, 1);
             case 3:
                 mats.put(bhg, 2);
             case 4:

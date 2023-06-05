@@ -1,11 +1,13 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner keyboard = new Scanner(System.in);
-        Map<String, Integer> mats = new HashMap<String, Integer>();
+        TreeMap<String, Integer> mats = new TreeMap<>();
 
         System.out.println("How many armor pieces:");
         int armorAmount = keyboard.nextInt();
